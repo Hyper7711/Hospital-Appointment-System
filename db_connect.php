@@ -8,7 +8,7 @@ $database = "hospital_opd_db";
 $conn = mysqli_connect($host, $user, $password, $database);
 
 if (!$conn) {
-    die("Database Connection Failed: " . mysqli_connect_error());
+    die("Connection Failed: " . mysqli_connect_error());
 }
 
 ?>
