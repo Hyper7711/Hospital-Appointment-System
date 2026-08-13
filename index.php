@@ -5,9 +5,14 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <title>CarePlus Hospital | Appointment & OPD Management</title>
+    <title>
+        CarePlus Hospital | Appointment & OPD Management
+    </title>
 
     <style>
 
@@ -24,232 +29,471 @@
             line-height: 1.6;
         }
 
+
         /* =========================
            NAVBAR
         ========================= */
 
         nav {
+
             background: #ffffff;
+
             padding: 15px 7%;
+
             display: flex;
+
             justify-content: space-between;
+
             align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+
+            box-shadow:
+                0 2px 10px rgba(0,0,0,0.08);
+
             position: sticky;
+
             top: 0;
+
             z-index: 1000;
+
         }
 
         .logo {
+
             color: #0077b6;
+
             font-size: 24px;
+
             font-weight: bold;
+
         }
 
-        .nav-links {
+        .nav-right {
+
             display: flex;
-            gap: 20px;
+
             align-items: center;
+
+            gap: 20px;
+
         }
 
-        .nav-links a {
+        .nav-right a {
+
             text-decoration: none;
+
             color: #333;
+
             font-weight: 500;
+
         }
 
-        .nav-links a:hover {
+        .nav-right a:hover {
+
             color: #0077b6;
+
         }
 
-        .login-btn {
-            background: #0077b6;
+        .admin-btn {
+
+            background: #343a40;
+
             color: white !important;
-            padding: 9px 16px;
+
+            padding: 7px 12px;
+
             border-radius: 5px;
+
+            font-size: 13px;
+
         }
+
+        .admin-btn:hover {
+
+            background: #212529;
+
+        }
+
 
         /* =========================
            HERO
         ========================= */
 
         .hero {
-            min-height: 520px;
+
+            min-height: 500px;
+
             display: flex;
+
             align-items: center;
+
             padding: 60px 7%;
-            background: linear-gradient(
-                135deg,
-                #e8f7ff,
-                #ffffff
-            );
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #e8f7ff,
+                    #ffffff
+                );
+
         }
 
         .hero-content {
-            width: 55%;
+
+            width: 60%;
+
         }
 
         .hero h1 {
+
             font-size: 48px;
+
             color: #023e8a;
+
             margin-bottom: 20px;
+
         }
 
         .hero p {
+
             font-size: 18px;
+
             color: #555;
+
             margin-bottom: 30px;
-            max-width: 600px;
+
+            max-width: 650px;
+
         }
 
-        .hero-buttons {
-            display: flex;
-            gap: 15px;
-        }
-
-        .primary-btn {
-            background: #0077b6;
-            color: white;
-            padding: 13px 22px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-
-        .secondary-btn {
-            border: 2px solid #0077b6;
-            color: #0077b6;
-            padding: 11px 22px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-
-        .primary-btn:hover {
-            background: #005f8f;
-        }
-
-        .secondary-btn:hover {
-            background: #0077b6;
-            color: white;
-        }
 
         /* =========================
-           SECTION
+           PORTAL BUTTONS
+        ========================= */
+
+        .portal-buttons {
+
+            display: flex;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+
+        }
+
+        .portal-btn {
+
+            padding: 13px 22px;
+
+            text-decoration: none;
+
+            border-radius: 6px;
+
+            font-weight: bold;
+
+            display: inline-block;
+
+        }
+
+        .patient-btn {
+
+            background: #0077b6;
+
+            color: white;
+
+        }
+
+        .patient-btn:hover {
+
+            background: #005f8f;
+
+        }
+
+        .doctor-btn {
+
+            border: 2px solid #0077b6;
+
+            color: #0077b6;
+
+            background: white;
+
+        }
+
+        .doctor-btn:hover {
+
+            background: #0077b6;
+
+            color: white;
+
+        }
+
+
+        /* =========================
+           PORTAL SECTION
         ========================= */
 
         .section {
+
             padding: 60px 7%;
+
         }
 
         .section-title {
+
             text-align: center;
+
             margin-bottom: 40px;
+
         }
 
         .section-title h2 {
+
             color: #023e8a;
+
             font-size: 32px;
+
         }
 
         .section-title p {
+
             color: #666;
+
         }
+
+        .portal-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 25px;
+
+        }
+
+        .portal-card {
+
+            background: white;
+
+            padding: 35px;
+
+            border-radius: 10px;
+
+            text-align: center;
+
+            box-shadow:
+                0 3px 12px rgba(0,0,0,0.08);
+
+        }
+
+        .portal-icon {
+
+            font-size: 45px;
+
+            margin-bottom: 15px;
+
+        }
+
+        .portal-card h3 {
+
+            color: #0077b6;
+
+            margin-bottom: 10px;
+
+        }
+
+        .portal-card p {
+
+            color: #666;
+
+            margin-bottom: 20px;
+
+        }
+
+        .register-btn {
+
+            background: #0077b6;
+
+            color: white;
+
+            padding: 10px 18px;
+
+            text-decoration: none;
+
+            border-radius: 5px;
+
+            margin-right: 5px;
+
+        }
+
+        .login-link {
+
+            border: 1px solid #0077b6;
+
+            color: #0077b6;
+
+            padding: 9px 18px;
+
+            text-decoration: none;
+
+            border-radius: 5px;
+
+        }
+
 
         /* =========================
            SERVICES
         ========================= */
 
         .services {
+
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
             gap: 25px;
+
         }
 
         .service-card {
+
             background: white;
+
             padding: 30px;
+
             text-align: center;
+
             border-radius: 10px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+
+            box-shadow:
+                0 3px 12px rgba(0,0,0,0.08);
+
         }
 
         .service-icon {
+
             font-size: 40px;
+
             margin-bottom: 15px;
+
         }
 
         .service-card h3 {
+
             color: #0077b6;
+
             margin-bottom: 10px;
+
         }
+
 
         /* =========================
            DEPARTMENTS
         ========================= */
 
         .departments {
+
             background: #eef8ff;
+
         }
 
         .department-grid {
+
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
             gap: 20px;
+
         }
 
         .department {
+
             background: white;
+
             padding: 20px;
+
             text-align: center;
+
             border-radius: 8px;
+
             font-weight: bold;
+
             color: #023e8a;
+
         }
+
 
         /* =========================
            CTA
         ========================= */
 
         .cta {
+
             text-align: center;
+
             padding: 70px 7%;
+
             background: #0077b6;
+
             color: white;
+
         }
 
         .cta h2 {
+
             font-size: 32px;
+
             margin-bottom: 15px;
+
         }
 
         .cta p {
+
             margin-bottom: 25px;
+
         }
 
         .cta a {
+
             background: white;
+
             color: #0077b6;
+
             padding: 13px 25px;
+
             text-decoration: none;
+
             border-radius: 6px;
+
             font-weight: bold;
+
         }
+
 
         /* =========================
            FOOTER
         ========================= */
 
         footer {
+
             background: #023e8a;
+
             color: white;
+
             padding: 30px 7%;
+
             text-align: center;
+
         }
 
         footer p {
+
             margin: 5px 0;
+
         }
+
 
         /* =========================
            RESPONSIVE
@@ -257,31 +501,44 @@
 
         @media (max-width: 800px) {
 
-            .nav-links {
+            .nav-right {
+
                 gap: 10px;
-                font-size: 14px;
+
+                font-size: 13px;
+
             }
 
             .hero {
+
                 text-align: center;
+
             }
 
             .hero-content {
+
                 width: 100%;
+
             }
 
             .hero h1 {
+
                 font-size: 36px;
+
             }
 
-            .hero-buttons {
+            .portal-buttons {
+
                 justify-content: center;
-                flex-wrap: wrap;
+
             }
 
+            .portal-grid,
             .services,
             .department-grid {
+
                 grid-template-columns: 1fr;
+
             }
 
         }
@@ -307,11 +564,7 @@
     </div>
 
 
-    <div class="nav-links">
-
-        <a href="index.php">
-            Home
-        </a>
+    <div class="nav-right">
 
         <a href="#services">
             Services
@@ -321,8 +574,11 @@
             Departments
         </a>
 
-        <a href="login.php" class="login-btn">
-            Patient Login
+        <a
+            href="admin/login.php"
+            class="admin-btn"
+        >
+            🔐 Admin Login
         </a>
 
     </div>
@@ -352,21 +608,21 @@
         </p>
 
 
-        <div class="hero-buttons">
+        <div class="portal-buttons">
 
             <a
                 href="register.php"
-                class="primary-btn"
+                class="portal-btn patient-btn"
             >
-                Register as Patient
+                👤 Patient Registration
             </a>
 
 
             <a
-                href="login.php"
-                class="secondary-btn"
+                href="doctor/login.php"
+                class="portal-btn doctor-btn"
             >
-                Patient Login
+                👨‍⚕️ Doctor Login
             </a>
 
         </div>
@@ -377,10 +633,109 @@
 
 
 <!-- =========================
+     PORTALS
+========================= -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <h2>
+            Choose Your Portal
+        </h2>
+
+        <p>
+            Access the system according to your role
+        </p>
+
+    </div>
+
+
+    <div class="portal-grid">
+
+
+        <!-- PATIENT -->
+
+        <div class="portal-card">
+
+            <div class="portal-icon">
+                👤
+            </div>
+
+            <h3>
+                Patient Portal
+            </h3>
+
+            <p>
+
+                Register as a patient, book OPD
+                appointments and manage your
+                appointments.
+
+            </p>
+
+
+            <a
+                href="register.php"
+                class="register-btn"
+            >
+                Register
+            </a>
+
+
+            <a
+                href="login.php"
+                class="login-link"
+            >
+                Login
+            </a>
+
+        </div>
+
+
+        <!-- DOCTOR -->
+
+        <div class="portal-card">
+
+            <div class="portal-icon">
+                👨‍⚕️
+            </div>
+
+            <h3>
+                Doctor Portal
+            </h3>
+
+            <p>
+
+                Doctors can access their appointments,
+                patients and OPD management dashboard.
+
+            </p>
+
+
+            <a
+                href="doctor/login.php"
+                class="login-link"
+            >
+                Doctor Login
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
      SERVICES
 ========================= -->
 
-<section class="section" id="services">
+<section
+    class="section"
+    id="services"
+>
 
     <div class="section-title">
 
@@ -409,8 +764,10 @@
             </h3>
 
             <p>
+
                 Book your OPD appointment
                 with your preferred doctor.
+
             </p>
 
         </div>
@@ -427,8 +784,10 @@
             </h3>
 
             <p>
+
                 Connect with doctors across
                 multiple medical departments.
+
             </p>
 
         </div>
@@ -445,8 +804,10 @@
             </h3>
 
             <p>
+
                 Easily track your appointments
                 and OPD visit status.
+
             </p>
 
         </div>
