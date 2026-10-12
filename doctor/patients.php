@@ -155,6 +155,7 @@ $patients = mysqli_query($conn, $sql);
         </tr>
 
 
+        
         <?php
 
         if (mysqli_num_rows($patients) > 0) {
